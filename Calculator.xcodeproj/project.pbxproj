@@ -54,14 +54,22 @@
 		F2A67C871D2B381F00B90779 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				F2A67C881D2B381F00B90779 /* AppDelegate.swift */,
 				F2A67C8A1D2B381F00B90779 /* ViewController.swift */,
 				F2A67C8C1D2B381F00B90779 /* Main.storyboard */,
+				F2A67C9A1D2B390E00B90779 /* Supporting Files */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		F2A67C9A1D2B390E00B90779 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2A67C881D2B381F00B90779 /* AppDelegate.swift */,
 				F2A67C8F1D2B381F00B90779 /* Assets.xcassets */,
 				F2A67C911D2B381F00B90779 /* LaunchScreen.storyboard */,
 				F2A67C941D2B381F00B90779 /* Info.plist */,
 			);
-			path = Calculator;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +104,7 @@
 				TargetAttributes = {
 					F2A67C841D2B381F00B90779 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = UV6VE82T3R;
 					};
 				};
 			};
@@ -251,6 +260,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.jerelmiller.Calculator;
@@ -262,6 +272,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.jerelmiller.Calculator;
