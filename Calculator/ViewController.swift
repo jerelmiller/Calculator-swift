@@ -13,6 +13,16 @@ class ViewController: UIViewController {
 
   var userIsInTheMiddleOfTyping = false
 
+  var displayValue: Double {
+    get {
+      return Double(display.text!)!
+    }
+
+    set {
+      display.text = String(newValue)
+    }
+  }
+
   @IBAction func touchDigit(sender: UIButton) {
     let digit = sender.currentTitle!
 
@@ -31,7 +41,9 @@ class ViewController: UIViewController {
 
     if let mathematicalOperation = sender.currentTitle {
       if mathematicalOperation == "π" {
-        display.text = String(M_PI)
+        displayValue = M_PI
+      } else if mathematicalOperation == "√" {
+        displayValue = sqrt(displayValue)
       }
     }
   }
