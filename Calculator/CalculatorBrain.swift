@@ -26,14 +26,14 @@ class CalculatorBrain {
   private var pending: PendingBinaryOperationInfo?
 
   private let operations: Dictionary<String, Operation> = [
-    "π": .Constant(M_PI),
-    "e": .Constant(M_E),
-    "√": .UnaryOperation(sqrt),
-    "cos": .UnaryOperation(cos),
-    "×": .BinaryOperation({ $0 * $1 }),
-    "÷": .BinaryOperation({ $0 / $1 }),
-    "+": .BinaryOperation({ $0 + $1 }),
-    "−": .BinaryOperation({ $0 - $1 }),
+    "π": Operation.Constant(M_PI),
+    "e": Operation.Constant(M_E),
+    "√": Operation.UnaryOperation(sqrt),
+    "cos": Operation.UnaryOperation(cos),
+    "×": Operation.BinaryOperation({ $0 * $1 }),
+    "÷": Operation.BinaryOperation({ $0 / $1 }),
+    "+": Operation.BinaryOperation({ $0 + $1 }),
+    "−": Operation.BinaryOperation({ $0 - $1 }),
     "=": .Equals
   ]
 
