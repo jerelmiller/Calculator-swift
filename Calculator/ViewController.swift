@@ -13,6 +13,8 @@ class ViewController: UIViewController {
 
   @IBAction func touchDigit(sender: UIButton) {
     let digit = sender.currentTitle!
-    print("touched \(digit)")
+    let textCurrentlyInDisplay = display!.text!
+
+    display!.text = textCurrentlyInDisplay + digit
   }
 }
